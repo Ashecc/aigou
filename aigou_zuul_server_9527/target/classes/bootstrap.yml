@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:1299   #配置中心的地址
+      label: master  #远程的分支
+      name: zuul-application  #哪一个文件
+      profile: dev  #哪一个环境
+      #profile: ${spring.actives.profile}  #获取运行的参数
